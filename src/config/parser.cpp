@@ -6,7 +6,10 @@
 
 // @TODO parse arrays
 
-namespace configuration
+namespace era
+{
+
+namespace config
 {
 
 // ----------------------------------------------------------------------------------------------------
@@ -240,4 +243,6 @@ bool Parser::ok() const
 
 
 } // end namespace configuration
+
+}
 

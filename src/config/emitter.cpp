@@ -3,7 +3,10 @@
 #include <iostream>
 #include <sstream>
 
-namespace configuration
+namespace era
+{
+
+namespace config
 {
 
 struct ParserImpl
@@ -150,3 +153,4 @@ void emit(const Data& data, std::ostream& out, int options)
 
 } // end namespace configuration
 
+}

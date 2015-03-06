@@ -4,7 +4,10 @@
 #include <string>
 #include "era/config/writer.h"
 
-namespace configuration
+namespace era
+{
+
+namespace config
 {
 
 class Parser
@@ -38,5 +41,7 @@ private:
 };
 
 } // end namespace configuration
+
+}
 
 #endif

@@ -6,6 +6,8 @@
 #include "era/geometry/rasterizer.h"
 #include "era/geometry/primitives.h"
 
+using namespace era;
+
 // ----------------------------------------------------------------------------------------------------
 
 int main(int argc, char **argv)

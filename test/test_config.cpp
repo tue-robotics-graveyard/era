@@ -5,9 +5,11 @@
 
 #include <iostream>
 
+using namespace era;
+
 // ----------------------------------------------------------------------------------------------------
 
-void showValue(configuration::Reader& r, const std::string& key)
+void showValue(config::Reader& r, const std::string& key)
 {
     int v;
     if (r.value(key, v))
@@ -22,17 +24,17 @@ int main(int argc, char **argv)
 {
     if (argc > 1)
     {
-        configuration::Data data;
-        configuration::Parser p(data);
+        config::Data data;
+        config::Parser p(data);
         p.readFile(argv[1]);
 
-        configuration::emit(data, std::cout, configuration::EMIT_JSON);
+        config::emit(data, std::cout, config::EMIT_JSON);
 
         return 0;
     }
 
-    configuration::Data data;
-    configuration::Writer w(data);
+    config::Data data;
+    config::Writer w(data);
 
     w.writeGroup("test");
     w.setValue("a", 5);
@@ -54,13 +56,13 @@ int main(int argc, char **argv)
 
     std::cout << "----------" << std::endl;
 
-    configuration::emit(data, std::cout, configuration::EMIT_JSON | configuration::EMIT_MINIMAL);
+    config::emit(data, std::cout, config::EMIT_JSON | config::EMIT_MINIMAL);
 
     std::cout << "----------" << std::endl;
 
     // - - - - - - -
 
-    configuration::Reader r(data);
+    config::Reader r(data);
 
     if (!r.readGroup("test"))
         std::cout << "Unknown group" << std::endl;

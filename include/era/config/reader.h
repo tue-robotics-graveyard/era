@@ -3,7 +3,10 @@
 
 #include "era/config/data.h"
 
-namespace configuration
+namespace era
+{
+
+namespace config
 {
 
 class Reader
@@ -100,6 +103,8 @@ private:
     unsigned int i_next_array_item_;
 
 };
+
+}
 
 }
 

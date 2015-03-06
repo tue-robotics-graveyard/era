@@ -3,6 +3,9 @@
 
 #include "era/geometry/math.h"
 
+namespace era
+{
+
 namespace geometry {
 
 class Mesh;
@@ -105,6 +108,8 @@ private:
               Vec3f& p_min, Vec3f& p_mid, Vec3f& p_max) const;
 
 };
+
+}
 
 }
 

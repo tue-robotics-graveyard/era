@@ -6,7 +6,10 @@
 #include <string>
 #include <iostream>
 
-namespace configuration
+namespace era
+{
+
+namespace config
 {
 
 class Variant
@@ -77,6 +80,8 @@ private:
     }
 
 };
+
+}
 
 }
 

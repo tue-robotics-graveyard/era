@@ -5,7 +5,10 @@
 
 #include <iostream>
 
-namespace configuration
+namespace era
+{
+
+namespace config
 {
 
 class Writer
@@ -97,6 +100,8 @@ private:
     Node n_current_;
 
 };
+
+}
 
 }
 

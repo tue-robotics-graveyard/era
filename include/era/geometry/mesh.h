@@ -5,6 +5,9 @@
 
 #include <vector>
 
+namespace era
+{
+
 namespace geometry {
 
 struct Triangle
@@ -30,6 +33,8 @@ struct Mesh
     }
 
 };
+
+}
 
 }
 

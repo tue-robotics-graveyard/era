@@ -7,7 +7,10 @@
 #include <map>
 #include <string>
 
-namespace configuration
+namespace era
+{
+
+namespace config
 {
 
 // ----------------------------------------------------------------------------------------------------
@@ -42,6 +45,8 @@ struct Data
 
     std::vector<Variant> values;
 };
+
+}
 
 }
 

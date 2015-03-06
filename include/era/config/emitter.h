@@ -3,7 +3,10 @@
 
 #include "era/config/data.h"
 
-namespace configuration
+namespace era
+{
+
+namespace config
 {
 
 enum EmitType
@@ -22,5 +25,7 @@ enum EmitOptions {
 void emit(const Data& data, std::ostream& out, int options = 0);
 
 } // end namespace configuration
+
+}
 
 #endif

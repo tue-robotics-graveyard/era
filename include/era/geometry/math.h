@@ -4,6 +4,9 @@
 #include <iostream>
 #include <cmath>
 
+namespace era
+{
+
 namespace geometry
 {
 
@@ -522,6 +525,8 @@ typedef Transform3T<float> Transform3f;
 typedef Transform3T<double> Transform3d;
 typedef Transform3T<int> Transform3i;
 typedef Transform3T<unsigned int> Transform3u;
+
+}
 
 }
 
