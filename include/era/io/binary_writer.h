@@ -104,7 +104,7 @@ private:
             idx = it->second;
         else
         {
-            std::size_t idx = labels_.size();
+            idx = labels_.size();
             label_to_index_[label] = idx;
             labels_.push_back(label);
         }
